@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docplanner Group</title>
+</head>
+<style>
+ body{
+        font-family: sans-serif;
+        color:#252525;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+a{
+     color: #252525;
+     text-decoration: none;
+}
+a:visited{
+    color: #252525;
+}
+.active{
+    color: #5dc6b0;
+}
+
+.docplanner-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0;
+}
+.intoduction-logo{
+    width: 50px;
+    height: 50px;
+
+}
+.introduction-title{
+    color: #5dc6b0;
+}
+.introduction-text{
+    display: flex;
+}
+.introduction-paragraph{
+    margin: 10px;
+}
+.services{
+    display: flex;
+}
+.service-card{
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+    position: relative;
+    flex-grow: 1;
+    height: 200px;
+}
+.service-card-patients{
+background-color: #5dc6b0;
+}
+.service-card-doctors{
+    background-color: #4293db;
+
+}
+.service-card-clinics{
+    background-color: rgb(22, 22, 73);
+}
+.service-card-select{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.para{
+    color: #5dc6b0;
+}
+.row{
+      
+       background-color: #a3e9da;
+      
+       
+   }
+   .row2{
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+.col-2{
+       flex-basis:50%;
+       min-width: 300px;
+   }
+.col-2 h1{
+      color: #5dc6b0;}
+.col-2 p{
+        color: rgb(82, 79, 79);
+    }
+.lg2{
+    margin-top: 10%;
+    margin-right:500px;
+    
+}
+.col-3 h1{
+    color: #5dc6b0;
+    text-align: center;
+
+}
+.col-3 p{
+        color: rgb(82, 79, 79);
+        text-align: center;
+    }
+ .fin2 h1{
+     text-align: center;
+ }   
+ .btn{
+     
+      display: inline-block;
+       background:rgb(42, 42, 202);
+       color:white;
+       padding: 8px 30px;
+       margin: 30px 0;
+       border-radius: 20px;
+       text-align: center;
+ }
+ .fin2 a{
+     color: white;
+     margin-left: 35%;
+ }
+ .footer{
+     color:rgb(82, 79, 79) ;
+     text-align: center;
+ }
+
+
+
+</style>
+<body>
+    <header class="docplanner-header">
+        <div class="docplanner-logo">
+            <img src="logo-default-group-en.svg" width="250px">
+        </div>
+        <nav class="header-menu">
+            <a class="active" href="#">About us</a>
+            <a  href="#">Career</a>
+            <a class="active" href="#">Departments</a>
+        </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <div class="introduction-logo">
+               <img src="logo docplanner.png">
+            </div>
+            <h1 class="introduction-title">
+                Making the healthcare experience more human
+            </h1>
+            <div class="introduction-text">
+                <p class="introduction-paragraph">We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+                <p class="introduction-paragraph">We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+
+            </div>
+        </section>
+        <section class="services">
+            <div class="service-card service-card-patients">
+                <div class="service-card-for">
+                    For patients
+                    <h2 class="service-card-title">
+                        Find a doctor, book a visit and solve any health-related doubt 
+
+                    </h2>
+                    <div class="service-card-content">
+                        <select class="service-card-select" name="" id="">
+                            <option value="">Choose country</option>
+                            <option value="">Argentina</option>
+                            <option value="">Brasil</option>
+                            <option value="">Chile</option>
+                            <option value="">Colombia</option>
+                        </select>
+                    </div>
+                </div>
+             
+
+            </div>
+            <div class="service-card service-card-doctors">
+               <div class="service-card-for">
+                  For doctors
+                  <h2 class="service-card-title">
+                    Save time managing visits and cut no-shows by half
+
+                </h2>
+                <div class="service-card-content">
+                    <select class="service-card-select" name="" id="">
+                        <option value="">Choose country</option>
+                        <option value="">Argentina</option>
+                        <option value="">Brasil</option>
+                        <option value="">Chile</option>
+                        <option value="">Colombia</option>
+                    </select>
+                </div>
+               </div>
+                
+            </div>
+            <div class="service-card service-card-clinics">
+                <div class="service-card-for">
+                    For clinics
+                    <h2 class="service-card-title">
+                        Deliver an exceptional patient experience in your clinic 
+
+                    </h2>
+                    <div class="service-card-content">
+                        <select class="service-card-select" name="" id="">
+                            <option value="">More than 20 specialists</option>
+                            <option value="">Argentina</option>
+                            <option value="">Brasil</option>
+                            <option value="">Spain</option>
+                            <option value="">Colombia</option>
+                        </select>
+                    </div>
+                </div>
+               
+
+        </section>
+        <div class="cont">
+            <h2 class="para">
+               <br> We are a global company
+               <br> with local culture
+            </h2>
+        </div>
+    
+        <div class="row">
+            <div class="col-2">
+            <h1> The world's biggest <br>healthcare platform</h1>
+            <p> We work from 7 offices all over the world, bringing Docplanner<br>Group to life in a dozen countries.</p>
+            
+            </div>
+            <div class="lg2">
+                <img src="logo docplanner.png" width="200px">
+
+            </div>
+        </div>
+        <div class="fin">
+            <div class="col-3">
+                <h1>Improve the lives of millions.<br>Change yours forever</h1>
+                <p>More than 1400 team mates share our same vision, goals and passion.<br>With offices in Warsaw, Barcelona, Istanbul, Rome, Bologna, Mexico City<br>and Curitiba, our search for great talent never stops.</p>
+            </div>
+
+        </div>
+        <div class="row2">
+            <div class="col-4">
+                <img src="img1.png">
+                <h4> Warsaw.</h4>
+            </div>
+                <div class="col-4">
+                    <img src="img2.png">
+                    <h4> Barcelona.</h4>
+                </div>
+                <div class="col-4">
+                    <img src="img3.png">
+                    <h4> Istanbul.</h4>
+                </div>
+                <div class="col-4">
+                    <img src="img4.png">
+                    <h4> Rome.</h4>
+                </div>
+                <div class="col-4">
+                    <img src="img5.png">
+                    <h4> Bologna.</h4>
+                </div>
+                <div class="col-4">
+                    <img src="img6.png">
+                    <h4> Curitiba.</h4>
+                </div>
+                <div class="col-4">
+                    <img src="img7.png">
+                    <h4> Mexico city.</h4>
+                </div>
+           
+        </div>
+        <div class="fin2">
+            <h1>Sounds interesting? Join us now!</h1>
+            <a href="" class="btn"> SEE ALL CURRENT OPENINGS</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>We are leaders in 11 countries: Poland, Turkey, Spain, Italy, Czech Republic, Mexico, Colombia, Brazil, Argentina, Peru and Chile<br>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.<br>www.docplanner.com © 2021</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
